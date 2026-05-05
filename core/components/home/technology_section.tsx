@@ -135,8 +135,13 @@ const TechnologySection = () => {
                       background: '#0a1f14',
                     }}
                   >
-                    <Image
+                    {/* <Image
                       src="/images/image_tech_crosssection.png"
+                      alt="Cross-section diagram of dual-layer cooling system — outer radiative coating and inner phase-change panels"
+                      style={{ display: 'block', width: '100%' }}
+                    /> */}
+                    <Image
+                      src="/images/image_foil.jpg"
                       alt="Cross-section diagram of dual-layer cooling system — outer radiative coating and inner phase-change panels"
                       style={{ display: 'block', width: '100%' }}
                     />
@@ -152,7 +157,7 @@ const TechnologySection = () => {
                   </Text>
 
                   {/* Nanoparticle closeup — overlapping inset card */}
-                  <motion.div
+                  {/* <motion.div
                     style={{
                       position: 'absolute',
                       bottom: 40,
@@ -185,7 +190,7 @@ const TechnologySection = () => {
                         99% Solar Reflectance
                       </Text>
                     </Box>
-                  </motion.div>
+                  </motion.div> */}
                 </Box>
               </motion.div>
             </Grid.Col>
