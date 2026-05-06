@@ -15,7 +15,7 @@ const Hero = () => {
 
   const stats = [
     { value: 13390, label: 'Active Farmers', suffix: '+', decimals: 0 },
-    { value: 1, label: 'Countries', suffix: '', decimals: 0 },
+    { value: 2, label: 'Countries', suffix: '', decimals: 0 },
     { value: 10, label: 'Monthly Revenue', prefix: '$', suffix: 'K+', decimals: 0 },
     { value: 600, label: 'Farmer Engagements', suffix: '+', decimals: 0 },
   ];

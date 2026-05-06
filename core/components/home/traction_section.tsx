@@ -48,7 +48,7 @@ const TractionSection = () => {
     { icon: IconCurrencyDollar, label: 'Monthly Revenue', value: '$10K+', color: '#5cc494' },
     { icon: IconUsers, label: 'Farmer Engagements', value: '600+', color: '#38bdf8' },
     { icon: IconAward, label: 'Awards & Grants', value: '$730K+', color: '#fbbf24' },
-    { icon: IconBuildingBank, label: 'Government Partners', value: '5+', color: '#a78bfa' },
+    { icon: IconBuildingBank, label: 'Government Partners', value: '3+', color: '#a78bfa' },
   ];
 
   return (

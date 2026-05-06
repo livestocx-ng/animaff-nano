@@ -9,7 +9,7 @@ const TeamSection = () => {
     {
       name: 'Oghenekevwe Emadago',
       role: 'COO / Biophysicist & Materials Lead',
-      bio: 'Award-winning biophysicist and the first African to receive the $100,000 O\'Shaughnessy Fellowship. Leads materials research, AI work, and grant strategy. NAEE 30Under30, Chatham House policy-maker, and advocate for women in science.',
+      bio: 'Award-winning biophysicist and O\'Shaughnessy Fellow, currently advancing materials research and AI strategy from the United States. A Chatham House policy-maker and NAEE 30Under30 leader driving global scientific innovation.',
       highlights: [
         '$100K O\'Shaughnessy Fellowship',
         'NAEE 30Under30',
@@ -20,7 +20,7 @@ const TeamSection = () => {
     {
       name: 'Yada Martins',
       role: 'CTO / Full-Stack AI Engineer',
-      bio: 'Expert engineer in Next.js, Flutter, NestJS, TensorFlow, and PyTorch. Secured a $50K GIZ government contract, won the NCAIR Hackathon, and is a UNDP Youth4Climate $30K grant recipient. His climate-tech work has been highlighted by The World Around.',
+      bio: 'Distinguished systems engineer specializing in climate-resilient infrastructure. Secured major GIZ and UNDP contracts totaling $80K for sustainable innovation. Recognized by The World Around for pioneering high-impact climate-tech solutions.',
       highlights: [
         '$50K GIZ Government Contract',
         'UNDP Youth4Climate $30K Grant',
