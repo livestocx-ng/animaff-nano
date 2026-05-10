@@ -112,7 +112,7 @@ const ImpactSection = () => {
             />
 
             {/* Floating region card */}
-            <motion.div
+            {/* <motion.div
               style={{
                 position: 'absolute',
                 bottom: 32,
@@ -138,7 +138,7 @@ const ImpactSection = () => {
               <Text size="xs" c="rgba(255,255,255,0.7)" mt={4} style={{ lineHeight: 1.5 }}>
                 Finger Lakes · Central NY · Southern Tier — America's dairy heartland
               </Text>
-            </motion.div>
+            </motion.div> */}
           </Grid.Col>
 
           {/* LEFT — Stats */}
