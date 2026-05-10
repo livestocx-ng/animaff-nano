@@ -48,7 +48,8 @@ const ProblemSection = () => {
             style={{
               position: 'absolute',
               inset: 0,
-              backgroundImage: 'url(/images/image_problem_cattle.png)',
+              backgroundImage: 'url(/images/image_root_1.jpg)',
+              // backgroundImage: 'url(/images/image_problem_cattle.png)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -59,7 +60,7 @@ const ProblemSection = () => {
               position: 'absolute',
               inset: 0,
               background:
-                'linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(10,31,20,0.7) 100%), linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%)',
+                'linear-gradient(to left, rgba(0,0,0,0) 50%, rgba(10,31,20,0.7) 100%), linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%)',
             }}
           />
           {/* Right-side fade so it blends into dark content */}

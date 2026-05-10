@@ -79,14 +79,15 @@ const ImpactSection = () => {
         <Grid gutter={0} align="stretch">
           {/* RIGHT — U.S. aerial farm image */}
           <Grid.Col
-            span={{ base: 12, lg: 5 }}
+            span={{ base: 12, lg: 6 }}
             style={{ position: 'relative', minHeight: 520, order: 2 }}
           >
             <Box
               style={{
                 position: 'absolute',
                 inset: 0,
-                backgroundImage: 'url(/images/image_market_farm_aerial.png)',
+                backgroundImage: 'url(/images/image_root_3.jpg)',
+                // backgroundImage: 'url(/images/image_market_farm_aerial.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
@@ -141,7 +142,7 @@ const ImpactSection = () => {
           </Grid.Col>
 
           {/* LEFT — Stats */}
-          <Grid.Col span={{ base: 12, lg: 7 }} style={{ order: 1 }}>
+          <Grid.Col span={{ base: 12, lg: 6 }} style={{ order: 1 }}>
             <Box py={{ base: 64, lg: 96 }} px={{ base: 24, sm: 40, lg: 64 }}>
               <Stack gap="xl">
                 {/* Label */}

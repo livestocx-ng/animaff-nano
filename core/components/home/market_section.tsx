@@ -202,6 +202,8 @@ const MarketSection = () => {
             style={{
               position: 'absolute',
               inset: 0,
+              // backgroundImage: 'url(/images/image_root_5.jpg)',
+              // backgroundImage: 'url(/images/image_farm.jpg)',
               backgroundImage: 'url(/images/image_market_farm_aerial.png)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',

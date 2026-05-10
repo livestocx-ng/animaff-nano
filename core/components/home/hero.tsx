@@ -102,7 +102,7 @@ const Hero = () => {
           <Container size="xl" w="100%">
             <Grid gutter={{ base: 'xl', lg: 80 }} align="center">
               {/* LEFT — Content */}
-              <Grid.Col span={{ base: 12, lg: 6 }}>
+              <Grid.Col span={{ base: 12, lg: 5 }}>
                 <Stack gap="xl">
                   {/* Badge */}
                   <motion.div
@@ -309,7 +309,7 @@ const Hero = () => {
               </Grid.Col>
 
               {/* RIGHT — Hero Image */}
-              <Grid.Col span={{ base: 12, lg: 6 }}>
+              <Grid.Col span={{ base: 12, lg: 7 }}>
                 <motion.div
                   initial={{ opacity: 0, x: 50, scale: 0.95 }}
                   animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -326,9 +326,10 @@ const Hero = () => {
                       }}
                     >
                       <Image
-                        src="/images/image_hero_barn_nano.png"
+                        src="/images/image_farmhouse.jpeg"
+                        // src="/images/image_hero_barn_nano.png"
                         alt="Livestock barn with nanotechnology cooling coating reflecting solar radiation"
-                        style={{ display: 'block', width: '100%' }}
+                        style={{ display: 'block', width: '100%', height: 600, objectFit: 'contain' }}
                       />
                     </Box>
 
