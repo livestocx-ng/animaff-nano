@@ -141,6 +141,7 @@ const TechnologySection = () => {
                       style={{ display: 'block', width: '100%' }}
                     /> */}
                     <Image
+                      // src="/images/image_root_2.jpg"
                       src="/images/image_foil.jpg"
                       alt="Cross-section diagram of dual-layer cooling system — outer radiative coating and inner phase-change panels"
                       style={{ display: 'block', width: '100%' }}
@@ -204,6 +205,21 @@ const TechnologySection = () => {
                 viewport={{ once: true }}
               >
                 <Stack gap="lg">
+                  <Box
+                    style={{
+                      borderRadius: 20,
+                      overflow: 'hidden',
+                      boxShadow: '0 0 60px rgba(34,163,102,0.15), 0 30px 60px rgba(0,0,0,0.15)',
+                      border: '1px solid rgba(34,163,102,0.2)',
+                      background: '#0a1f14',
+                    }}
+                  >
+                    <Image
+                      radius="lg"
+                      alt="Technology Root"
+                      src="/images/image_root_2.jpg"
+                    />
+                  </Box>
                   {techCards.map((card, i) => (
                     <motion.div
                       key={i}
@@ -267,7 +283,7 @@ const TechnologySection = () => {
           </Grid>
         </Stack>
       </Container>
-    </Box>
+    </Box >
   );
 };
 

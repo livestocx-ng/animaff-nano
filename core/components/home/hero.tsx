@@ -14,7 +14,7 @@ const Hero = () => {
   const { climateResilienceForecast } = useAppContext();
 
   const stats = [
-    { value: 13390, label: 'Active Farmers', suffix: '+', decimals: 0 },
+    { value: 80, label: 'Active Farmers', suffix: '+', decimals: 0 },
     { value: 2, label: 'Countries', suffix: '', decimals: 0 },
     { value: 10, label: 'Monthly Revenue', prefix: '$', suffix: 'K+', decimals: 0 },
     { value: 600, label: 'Farmer Engagements', suffix: '+', decimals: 0 },
@@ -329,12 +329,13 @@ const Hero = () => {
                         src="/images/image_farmhouse.jpeg"
                         // src="/images/image_hero_barn_nano.png"
                         alt="Livestock barn with nanotechnology cooling coating reflecting solar radiation"
-                        style={{ display: 'block', width: '100%', height: 600, objectFit: 'contain' }}
+                        style={{ display: 'block', width: '100%', objectFit: 'contain' }}
+                        // style={{ display: 'block', width: '100%', height: 600, objectFit: 'contain' }}
                       />
                     </Box>
 
                     {/* Floating card — top right: Live Alert */}
-                    <motion.div
+                    {/* <motion.div
                       style={{
                         position: 'absolute',
                         top: -16,
@@ -369,7 +370,7 @@ const Hero = () => {
                       <Text size="xs" c="rgba(255,255,255,0.65)" style={{ lineHeight: 1.4 }}>
                         Disease outbreak detected — Vet response dispatched
                       </Text>
-                    </motion.div>
+                    </motion.div> */}
 
                     {/* Floating card — bottom left: Weather */}
                     <motion.div
