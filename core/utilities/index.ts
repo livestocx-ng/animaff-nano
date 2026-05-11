@@ -26,7 +26,8 @@ export const navLinks = [
   // { link: '/#services', label: 'Platform', target: '' },
   // { link: '/#impact', label: 'Impact', target: '' },
   // { link: '/#traction', label: 'Research', target: '' },
-  { link: '/about-us', label: 'About Us', target: '' },
+  { link: '/about-us', label: 'About', target: '' },
+  { link: '/team', label: 'Team', target: '' },
   { link: '/contact-us', label: 'Contact', target: '' },
 ];
 

@@ -197,7 +197,7 @@ const AboutUs = () => {
           </Box>
         </Box>
 
-        <Box py={50} px={20}>
+        {/* <Box py={50} px={20}>
           <Title order={2} mb={40} ta="center">
             Meet the Founders
           </Title>
@@ -248,7 +248,7 @@ const AboutUs = () => {
               </Card>
             ))}
           </Flex>
-        </Box>
+        </Box> */}
 
         <Box py={50} px={20} ta="center">
           <Title order={3} mb="lg">
