@@ -139,6 +139,30 @@ const ImpactSection = () => {
                 Finger Lakes · Central NY · Southern Tier — America's dairy heartland
               </Text>
             </motion.div> */}
+            <motion.div
+              style={{
+                position: 'absolute',
+                bottom: 24,
+                right: 24,
+                background: 'rgba(10,31,20,0.92)',
+                backdropFilter: 'blur(16px)',
+                borderRadius: 12,
+                border: '1px solid rgba(34,163,102,0.3)',
+                padding: '12px 18px',
+                zIndex: 10,
+              }}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <Text size="xs" c="climate.4" fw={700}>
+                🔬 University of Wyoming
+              </Text>
+              <Text size="xs" c="rgba(255,255,255,0.6)" mt={2}>
+                Nanoparticles Lab — Active R&D Partner
+              </Text>
+            </motion.div>
           </Grid.Col>
 
           {/* LEFT — Stats */}

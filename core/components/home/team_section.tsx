@@ -5,11 +5,26 @@ import { motion } from 'framer-motion';
 import { Box, Container, Grid, Group, Stack, Text, Title, Anchor } from '@mantine/core';
 import { IconBrandLinkedin, IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
+const bgImages = [
+  // '/images/image_team.jpg',
+  // '/images/image_team_2.jpg',
+  '/images/image_team_3.jpg',
+  '/images/image_team_4.jpg',
+];
+
 const TeamSection = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [bgIndex, setBgIndex] = useState(0);
+
+  useEffect(() => {
+    const bgInterval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % bgImages.length);
+    }, 5000);
+    return () => clearInterval(bgInterval);
+  }, []);
 
   const handleScroll = () => {
     if (scrollRef.current) {
@@ -118,16 +133,21 @@ const TeamSection = () => {
     >
       <Grid gutter={0} align="stretch">
         {/* LEFT — Lab image */}
-        <Grid.Col span={{ base: 12, lg: 5 }} style={{ position: 'relative', minHeight: 520 }}>
-          <Box
-            style={{
-              position: 'absolute',
-              inset: 0,
-              backgroundImage: 'url(/images/image_team_lab.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
+        <Grid.Col span={{ base: 12, lg: 7 }} style={{ position: 'relative', minHeight: 520 }}>
+          {bgImages.map((src, idx) => (
+            <Box
+              key={src}
+              style={{
+                position: 'absolute',
+                inset: 0,
+                backgroundImage: `url(${src})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                opacity: bgIndex === idx ? 1 : 0,
+                transition: 'opacity 1s ease-in-out',
+              }}
+            />
+          ))}
           {/* Right fade to dark on desktop */}
           <Box
             style={{
@@ -148,7 +168,7 @@ const TeamSection = () => {
           />
 
           {/* Lab label card */}
-          <motion.div
+          {/* <motion.div
             style={{
               position: 'absolute',
               bottom: 24,
@@ -171,11 +191,11 @@ const TeamSection = () => {
             <Text size="xs" c="rgba(255,255,255,0.6)" mt={2}>
               Nanoparticles Lab — Active R&D Partner
             </Text>
-          </motion.div>
+          </motion.div> */}
         </Grid.Col>
 
         {/* RIGHT — Team cards */}
-        <Grid.Col span={{ base: 12, lg: 7 }}>
+        <Grid.Col span={{ base: 12, lg: 5 }}>
           <Box py={{ base: 64, lg: 96 }} px={{ base: 24, sm: 40, lg: 64 }}>
             <Stack gap="xl">
               {/* Label + Title */}

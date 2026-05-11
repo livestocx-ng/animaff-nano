@@ -121,18 +121,18 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/divine-idokoh/',
     image: '/images/team/team_member_2.jpg',
   },
-  // {
-  //   name: 'Dr. Virtous Luka',
-  //   role: 'Veterinary Research Lead',
-  //   bio: 'Expert researcher with 7+ years of veterinary and biochemical experience, including key roles at Nigeria’s National Veterinary Research Institute. Holds a PhD in Animal Health from Wageningen University.',
-  //   highlights: [
-  //     'PhD Wageningen University',
-  //     '7+ Years Veterinary Research',
-  //     'Biochemical Systems Expert',
-  //   ],
-  //   linkedin: '#',
-  //   image: '/images/team/team_member_4.jpeg',
-  // },
+  {
+    name: 'Dr. Virtous Luka',
+    role: 'Veterinary Research Lead',
+    bio: 'Expert researcher with 7+ years of veterinary and biochemical experience, including key roles at Nigeria’s National Veterinary Research Institute. Holds a PhD in Animal Health from Wageningen University.',
+    highlights: [
+      'PhD Wageningen University',
+      '7+ Years Veterinary Research',
+      'Biochemical Systems Expert',
+    ],
+    linkedin: '#',
+    image: '/images/team/team_member_4.jpeg',
+  },
   {
     name: 'Yada Martins',
     role: 'CTO / Full-Stack AI Engineer',
