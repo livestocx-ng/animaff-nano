@@ -1,46 +1,52 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Livestocx - About Us',
-	description: 'Best deals, Everything Animals',
-	keywords: ['Livestocx', 'Livestock', 'Nigeria', 'Pets', 'Animals', 'Meat'],
-	other: {
-		'facebook-domain-verification': 'yy2fxudmyl6e8nxtl2zjx9lss8j8dl',
-	},
+	title: 'Nano - About Us',
+	description: 'Revolutionizing livestock cooling with nanotechnology — no electricity required. Protecting animals, reducing losses, and improving farm productivity with passive radiative cooling and phase-change materials.',
+	keywords: [
+		'Nano',
+		'Nanotechnology',
+		'Livestock Farms',
+		'Radiative Cooling',
+		'Nanoparticles',
+		'Phase-change Materials',
+		'Temperature Regulation',
+		'Heat Stress Reduction',
+	],
 	openGraph: {
-		title: 'Livestocx - About Us',
-		description: 'Best deals, Everything Animals',
-		url: 'https://livestocx.com',
-		siteName: 'Livestocx',
+		title: 'Nano - About Us',
+		description: 'Revolutionizing livestock cooling with nanotechnology — no electricity required. Protecting animals, reducing losses, and improving farm productivity with passive radiative cooling and phase-change materials.',
+		url: 'https://nano.animaff.com',
+		siteName: 'Nano',
 		type: 'website',
 		images: [
 			{
-				url: 'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-300x200.png',
+				url: 'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-300x200.png',
 				secureUrl:
-					'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-300x200.png',
+					'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-300x200.png',
 				width: 300,
 				height: 200,
 			},
 			{
-				url: 'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-300x300.png',
+				url: 'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-300x300.png',
 				secureUrl:
-					'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-300x300.png',
+					'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-300x300.png',
 				width: 300,
 				height: 300,
 			},
 			{
-				url: 'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-1200x630.png',
+				url: 'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-1200x630.png',
 				secureUrl:
-					'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-1200x630.png',
-				alt: 'Livestocx Banner',
+					'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-1200x630.png',
+				alt: 'Nano Banner',
 				width: 1200,
 				height: 630,
 			},
 			{
-				url: 'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-1200x630.png',
+				url: 'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-1200x630.png',
 				secureUrl:
-					'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-1200x630.png',
-				alt: 'Livestocx Banner',
+					'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-1200x630.png',
+				alt: 'Nano Banner',
 			},
 		],
 	},
@@ -48,42 +54,41 @@ export const metadata: Metadata = {
 		card: 'summary',
 		site: '@livestocx',
 		creator: '@livestocx',
-		title: 'Livestocx - About Us',
-
-		description: 'Best deals, Everything Animals',
+		title: 'Nano - About Us',
+		description: 'Revolutionizing livestock cooling with nanotechnology — no electricity required. Protecting animals, reducing losses, and improving farm productivity with passive radiative cooling and phase-change materials.',
 		images: [
 			{
-				url: 'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-300x200.png',
+				url: 'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-300x200.png',
 				secureUrl:
-					'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-300x200.png',
+					'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-300x200.png',
 				width: 300,
 				height: 200,
 			},
 			{
-				url: 'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-300x300.png',
+				url: 'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-300x300.png',
 				secureUrl:
-					'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-300x300.png',
+					'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-300x300.png',
 				width: 300,
 				height: 300,
 			},
 			{
-				url: 'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-1200x630.png',
+				url: 'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-1200x630.png',
 				secureUrl:
-					'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-1200x630.png',
-				alt: 'Livestocx Banner',
+					'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-1200x630.png',
+				alt: 'Nano Banner',
 				width: 1200,
 				height: 630,
 			},
 			{
-				url: 'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-1200x630.png',
+				url: 'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-1200x630.png',
 				secureUrl:
-					'https://livestocx-media.s3.amazonaws.com/public/livestocx-thumbnail-1200x630.png',
-				alt: 'Livestocx Banner',
+					'https://animaff-media.s3.amazonaws.com/public/animaff-thumbnail-1200x630.png',
+				alt: 'Nano Banner',
 			},
 		],
 	},
 };
 
-export default function Layout({children}: {children: React.ReactNode}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
 	return <>{children}</>;
 }

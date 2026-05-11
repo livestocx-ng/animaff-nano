@@ -205,7 +205,7 @@ const AboutUs = () => {
             {teamMembers.map((member) => (
               <Card
                 withBorder
-                shadow="xl"
+                shadow="lg"
                 radius="lg"
                 padding="xl"
                 key={member.name}

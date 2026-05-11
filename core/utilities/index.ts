@@ -98,17 +98,63 @@ export const platformFeatures = [
 export const teamMembers = [
   {
     name: 'Oghenekevwe Emadago',
-    role: 'Co-founder/CEO',
-    bio: `Award-winning biophysicist and nanoparticle researcher at the University of Wyoming. O’Shaughnessy Fellow ($100k) and NAAEE 30Under30. Leading Animaff's materials and AI strategy with a focus on sustainable infrastructure.`,
-    image: '/images/team/team_member_1.png',
+    role: 'CEO / Co-founder',
+    bio: 'Award-winning nanochemist and materials scientist leading climate-smart livestock solutions for 13,000+ users across Africa and the US. Recognized globally as an O\'Shaughnessy Fellow and AfriPlastics Prize winner.',
+    highlights: [
+      '$100K O\'Shaughnessy Fellow',
+      '£100K AfriPlastics Prize',
+      'Materials Science Innovator',
+    ],
     linkedin: 'https://www.linkedin.com/in/oghenekevwe-emadago/',
+    image: '/images/team/team_member_1.png',
   },
   {
+    name: 'Idokoh Divine',
+    role: 'COO / Agricultural Economist',
+    bio: 'Agricultural Economist with 5+ years driving livestock value chains and farmer engagement. Scaled adoption to 13,000+ rural farmers while managing high-impact projects funded by the EU, GIZ, and the U.S. Chamber of Commerce.',
+    highlights: [
+      '13,000+ Farmers Scaled',
+      'EU & GIZ Project Manager',
+      'Livestock Value Chain Expert',
+    ],
+    linkedin: 'https://www.linkedin.com/in/divine-idokoh/',
+    image: '/images/team/team_member_2.jpg',
+  },
+  // {
+  //   name: 'Dr. Virtous Luka',
+  //   role: 'Veterinary Research Lead',
+  //   bio: 'Expert researcher with 7+ years of veterinary and biochemical experience, including key roles at Nigeria’s National Veterinary Research Institute. Holds a PhD in Animal Health from Wageningen University.',
+  //   highlights: [
+  //     'PhD Wageningen University',
+  //     '7+ Years Veterinary Research',
+  //     'Biochemical Systems Expert',
+  //   ],
+  //   linkedin: '#',
+  //   image: '/images/team/team_member_4.jpeg',
+  // },
+  {
     name: 'Yada Martins',
-    role: 'Co-founder/CTO',
-    bio: `Full-stack engineer and AI developer. UNDP Youth4Climate Grant Recipient. Expert in building scalable platforms (Next.js, Flutter, Node.js) and AI pipelines for regulatory and environmental data.`,
-    image: '/images/team/team_member_3.jpg',
+    role: 'CTO / Full-Stack AI Engineer',
+    bio: 'Innovative full-stack AI engineer specializing in predictive disease and climate systems. Backed by multiple innovation awards including major GIZ contracts and UNDP grants for high-impact climate-tech infrastructure.',
+    highlights: [
+      '$50K GIZ Contract',
+      'UNDP Youth4Climate Grant',
+      'Predictive AI Specialist',
+    ],
     linkedin: 'https://www.linkedin.com/in/yada-martins',
+    image: '/images/team/team_member_3.jpg',
+  },
+  {
+    name: 'Asalu Temitope',
+    role: 'Lead AI Systems Engineer',
+    bio: 'Expert AI engineer focusing on predictive data models and machine learning pipelines for climate-resilient agriculture. Specializes in optimizing thermal management systems through advanced IoT sensor integrations.',
+    highlights: [
+      'Predictive Modeling Expert',
+      'IoT Data Integration',
+      'AI for Agriculture',
+    ],
+    linkedin: 'https://www.linkedin.com/in/asalu-peter',
+    image: '/images/team/team_member_5.jpeg',
   },
 ];
 
@@ -225,40 +271,40 @@ export const appFeatures = [
 
 
 export const Sponsors: Sponsor[] = [
-	{
-		name: 'AI Collective',
-		image: '/images/sponsors/ai_collective.png',
-	},
-	{
-		name: 'Federal Ministry of Communications, Innovation and Development Economy',
-		image: '/images/sponsors/fmcide.png',
-	},
-	{
-		name: 'National Center for Artificial Intelligence and Robotics',
-		image: '/images/sponsors/ncair.png',
-	},
-	{
-		name: 'National Information Technology Development Agency',
-		image: '/images/sponsors/nitda.png',
-	},
-	{
-		name: 'Deutsche Gesellschaft für Internationale Zusammenarbeit',
-		image: '/images/sponsors/giz.jpg',
-	},
-	{
-		name: 'Co-founded by the European Union',
-		image: '/images/sponsors/eu_2.png',
-	},
-	{
-		name: 'Agric-Business Facility for Africa',
-		image: '/images/sponsors/abfa.jpg',
-	},
-	{
-		name: 'german cooperation DEUTSCHE ZUSAMMENARBEIT',
-		image: '/images/sponsors/gcd.jpg',
-	},
-	{
-		name: 'Organisation of African, Caribbean and Pacific States (OACPS)',
-		image: '/images/sponsors/oacps.jpg',
-	},
+  {
+    name: 'AI Collective',
+    image: '/images/sponsors/ai_collective.png',
+  },
+  {
+    name: 'Federal Ministry of Communications, Innovation and Development Economy',
+    image: '/images/sponsors/fmcide.png',
+  },
+  {
+    name: 'National Center for Artificial Intelligence and Robotics',
+    image: '/images/sponsors/ncair.png',
+  },
+  {
+    name: 'National Information Technology Development Agency',
+    image: '/images/sponsors/nitda.png',
+  },
+  {
+    name: 'Deutsche Gesellschaft für Internationale Zusammenarbeit',
+    image: '/images/sponsors/giz.jpg',
+  },
+  {
+    name: 'Co-founded by the European Union',
+    image: '/images/sponsors/eu_2.png',
+  },
+  {
+    name: 'Agric-Business Facility for Africa',
+    image: '/images/sponsors/abfa.jpg',
+  },
+  {
+    name: 'german cooperation DEUTSCHE ZUSAMMENARBEIT',
+    image: '/images/sponsors/gcd.jpg',
+  },
+  {
+    name: 'Organisation of African, Caribbean and Pacific States (OACPS)',
+    image: '/images/sponsors/oacps.jpg',
+  },
 ];
