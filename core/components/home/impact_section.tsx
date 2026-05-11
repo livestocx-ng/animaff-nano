@@ -142,8 +142,8 @@ const ImpactSection = () => {
             <motion.div
               style={{
                 position: 'absolute',
-                bottom: 24,
-                right: 24,
+                top: 44,
+                left: 24,
                 background: 'rgba(10,31,20,0.92)',
                 backdropFilter: 'blur(16px)',
                 borderRadius: 12,
