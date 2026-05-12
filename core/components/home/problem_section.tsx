@@ -48,7 +48,7 @@ const ProblemSection = () => {
             style={{
               position: 'absolute',
               inset: 0,
-              backgroundImage: 'url(/images/image_root_1.jpg)',
+              backgroundImage: 'url(/images/image_team_4.jpg)',
               // backgroundImage: 'url(/images/image_problem_cattle.png)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',

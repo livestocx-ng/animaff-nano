@@ -9,7 +9,8 @@ const bgImages = [
   // '/images/image_team.jpg',
   // '/images/image_team_2.jpg',
   '/images/image_team_3.jpg',
-  '/images/image_team_4.jpg',
+  // '/images/image_team_4.jpg',
+  '/images/image_root_1.jpg',
 ];
 
 const TeamSection = () => {
