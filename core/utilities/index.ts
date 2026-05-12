@@ -273,12 +273,36 @@ export const appFeatures = [
 
 export const Sponsors: Sponsor[] = [
   {
+    name: 'Kenya Climate Innovation Center',
+    image: '/images/sponsors/KCIC.png',
+  },
+  {
+    name: 'Agric-Business Facility for Africa',
+    image: '/images/sponsors/abfa.jpg',
+  },
+  {
     name: 'AI Collective',
     image: '/images/sponsors/ai_collective.png',
   },
   {
-    name: 'Federal Ministry of Communications, Innovation and Development Economy',
+    name: 'European Union',
+    image: '/images/sponsors/eu.jpg',
+  },
+  {
+    name: 'Federal Ministry of Communications, Innovation and Digital Economy',
     image: '/images/sponsors/fmcide.png',
+  },
+  {
+    name: 'Global Center on Adaptation',
+    image: '/images/sponsors/gca.png',
+  },
+  {
+    name: 'German Cooperation',
+    image: '/images/sponsors/gcd.jpg',
+  },
+  {
+    name: 'GIZ',
+    image: '/images/sponsors/giz.jpg',
   },
   {
     name: 'National Center for Artificial Intelligence and Robotics',
@@ -289,23 +313,7 @@ export const Sponsors: Sponsor[] = [
     image: '/images/sponsors/nitda.png',
   },
   {
-    name: 'Deutsche Gesellschaft für Internationale Zusammenarbeit',
-    image: '/images/sponsors/giz.jpg',
-  },
-  {
-    name: 'Co-founded by the European Union',
-    image: '/images/sponsors/eu_2.png',
-  },
-  {
-    name: 'Agric-Business Facility for Africa',
-    image: '/images/sponsors/abfa.jpg',
-  },
-  {
-    name: 'german cooperation DEUTSCHE ZUSAMMENARBEIT',
-    image: '/images/sponsors/gcd.jpg',
-  },
-  {
-    name: 'Organisation of African, Caribbean and Pacific States (OACPS)',
+    name: 'Organisation of African, Caribbean and Pacific States',
     image: '/images/sponsors/oacps.jpg',
   },
 ];

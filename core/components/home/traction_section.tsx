@@ -1,48 +1,32 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Box, Container, Grid, Group, Stack, Text, Title } from '@mantine/core';
+import { Box, Container, Grid, Group, Image, Stack, Text, Title } from '@mantine/core';
 import { IconAward, IconBuildingBank, IconCurrencyDollar, IconUsers } from '@tabler/icons-react';
+import { Sponsors } from '../../utilities';
 
 const TractionSection = () => {
   const partners = [
+    ...Sponsors,
     {
-      emoji: '🏛️',
       name: 'University of Wyoming',
+      image: '🏛️', // Use emoji as placeholder or keep it separate
       detail: 'Nanoparticles Lab — Active R&D Partner',
-      color: '#fbbf24',
     },
-    // {
-    //   emoji: '🇩🇪',
-    //   name: 'German Government / GIZ',
-    //   detail: 'Funding 200+ farmer demos through Dec 2026',
-    //   color: '#38bdf8',
-    // },
     {
-      emoji: '🇺🇸',
       name: 'U.S. Chamber of Commerce',
+      image: '🇺🇸',
       detail: 'Digital Innovation Award Winner',
-      color: '#5cc494',
     },
-    // {
-    //   emoji: '🇺🇳',
-    //   name: 'UNDP Youth4Climate',
-    //   detail: '$30,000 Grant Recipient',
-    //   color: '#a78bfa',
-    // },
-    // {
-    //   emoji: '🇪🇺',
-    //   name: 'European Union',
-    //   detail: 'Co-funded early testing & farmer onboarding',
-    //   color: '#fb923c',
-    // },
     {
-      emoji: '💰',
       name: 'Alexis Ohanian (Reddit Founder)',
+      image: '💰',
       detail: '$100,000+ invested in founding team',
-      color: '#f472b6',
     },
   ];
+
+  // Duplicate for infinite scroll
+  const scrollPartners = [...partners, ...partners];
 
   const milestones = [
     { icon: IconCurrencyDollar, label: 'Monthly Revenue', value: '$10K+', color: '#5cc494' },
@@ -170,52 +154,95 @@ const TractionSection = () => {
             ))}
           </Grid>
 
-          {/* Partner cards */}
-          <Grid gutter="md">
-            {partners.map((p, i) => (
-              <Grid.Col key={i} span={{ base: 12, sm: 6, lg: 4 }}>
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: i * 0.08 }}
-                  viewport={{ once: true }}
+          {/* Infinite Scroll Partners */}
+          <Box style={{ position: 'relative', width: '100%', overflow: 'hidden' }} py={20}>
+            <motion.div
+              animate={{
+                x: [0, '-50%'],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                  duration: 40,
+                  ease: 'linear',
+                },
+              }}
+              style={{
+                display: 'flex',
+                gap: 40,
+                width: 'fit-content',
+              }}
+            >
+              {scrollPartners.map((p, i) => (
+                <Box
+                  key={i}
+                  style={{
+                    flexShrink: 0,
+                    background: 'white',
+                    border: '1px solid rgba(34,163,102,0.12)',
+                    borderRadius: 16,
+                    padding: '16px 24px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 16,
+                    minWidth: 280,
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                  }}
                 >
-                  <Box
-                    style={{
-                      background: 'white',
-                      border: '1px solid rgba(34,163,102,0.12)',
-                      borderRadius: 16,
-                      padding: '20px 24px',
-                      display: 'flex',
-                      gap: 16,
-                      alignItems: 'flex-start',
-                      transition: 'box-shadow 0.3s, transform 0.3s',
-                      cursor: 'default',
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 24px rgba(34,163,102,0.12)';
-                      (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)';
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.boxShadow = '0 2px 8px rgba(0,0,0,0.04)';
-                      (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
-                    }}
-                  >
-                    <Text style={{ fontSize: '2rem', lineHeight: 1 }}>{p.emoji}</Text>
-                    <Stack gap={4}>
-                      <Text fw={700} size="sm" c="#0a1f14">
-                        {p.name}
-                      </Text>
-                      <Text size="xs" c="dimmed">
-                        {p.detail}
-                      </Text>
-                    </Stack>
+                  <Box w={48} h={48} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    {p.image.length > 2 ? (
+                      <Image
+                        src={p.image}
+                        alt={p.name}
+                        fit="contain"
+                        w="100%"
+                        h="100%"
+                      />
+                    ) : (
+                      <Text style={{ fontSize: '2rem', lineHeight: 1 }}>{p.image}</Text>
+                    )}
                   </Box>
-                </motion.div>
-              </Grid.Col>
-            ))}
-          </Grid>
+                  <Stack gap={0}>
+                    <Text fw={700} size="sm" c="#0a1f14" style={{ whiteSpace: 'nowrap' }}>
+                      {p.name}
+                    </Text>
+                    {'detail' in p && (
+                      <Text size="xs" c="dimmed" style={{ whiteSpace: 'nowrap' }}>
+                        {p.detail as string}
+                      </Text>
+                    )}
+                  </Stack>
+                </Box>
+              ))}
+            </motion.div>
+            
+            {/* Gradient Overlays for smooth fade */}
+            <Box
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                bottom: 0,
+                width: 100,
+                background: 'linear-gradient(to right, #f8faf9, transparent)',
+                zIndex: 2,
+                pointerEvents: 'none',
+              }}
+            />
+            <Box
+              style={{
+                position: 'absolute',
+                top: 0,
+                right: 0,
+                bottom: 0,
+                width: 100,
+                background: 'linear-gradient(to left, #f8faf9, transparent)',
+                zIndex: 2,
+                pointerEvents: 'none',
+              }}
+            />
+          </Box>
         </Stack>
       </Container>
     </Box>
