@@ -1,32 +1,25 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { Partners } from '../../utilities';
 import { Box, Container, Grid, Group, Image, Stack, Text, Title } from '@mantine/core';
 import { IconAward, IconBuildingBank, IconCurrencyDollar, IconUsers } from '@tabler/icons-react';
-import { Sponsors } from '../../utilities';
 
 const TractionSection = () => {
-  const partners = [
-    ...Sponsors,
-    {
-      name: 'University of Wyoming',
-      image: '🏛️', // Use emoji as placeholder or keep it separate
-      detail: 'Nanoparticles Lab — Active R&D Partner',
-    },
-    {
-      name: 'U.S. Chamber of Commerce',
-      image: '🇺🇸',
-      detail: 'Digital Innovation Award Winner',
-    },
-    {
-      name: 'Alexis Ohanian (Reddit Founder)',
-      image: '💰',
-      detail: '$100,000+ invested in founding team',
-    },
-  ];
+  const [shuffledPartners, setShuffledPartners] = useState(Partners);
+
+  useEffect(() => {
+    const shuffle = [...Partners];
+    for (let i = shuffle.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffle[i], shuffle[j]] = [shuffle[j], shuffle[i]];
+    }
+    setShuffledPartners(shuffle);
+  }, []);
 
   // Duplicate for infinite scroll
-  const scrollPartners = [...partners, ...partners];
+  const scrollPartners = [...shuffledPartners, ...shuffledPartners];
 
   const milestones = [
     { icon: IconCurrencyDollar, label: 'Monthly Revenue', value: '$10K+', color: '#5cc494' },

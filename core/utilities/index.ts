@@ -1,5 +1,5 @@
 import { IconCpu, IconLeaf, IconTruckDelivery, IconUsers } from '@tabler/icons-react';
-import { Sponsor } from '../types';
+import { Partner } from '../types';
 
 interface ProductDisplayType {
   title: string;
@@ -271,7 +271,7 @@ export const appFeatures = [
 ];
 
 
-export const Sponsors: Sponsor[] = [
+export const Partners: Partner[] = [
   {
     name: 'Kenya Climate Innovation Center',
     image: '/images/sponsors/KCIC.png',
@@ -315,5 +315,20 @@ export const Sponsors: Sponsor[] = [
   {
     name: 'Organisation of African, Caribbean and Pacific States',
     image: '/images/sponsors/oacps.jpg',
+  },
+  {
+    name: 'University of Wyoming',
+    image: '/images/sponsors/uw-the-university-of-wyoming.jpg', // Use emoji as placeholder or keep it separate
+    detail: 'Nanoparticles Lab — Active R&D Partner',
+  },
+  {
+    name: 'U.S. Chamber of Commerce',
+    image: '/images/sponsors/us_chamber_of_commerce.jpg',
+    detail: 'Digital Innovation Award Winner',
+  },
+  {
+    name: 'Alexis Ohanian (Reddit Founder)',
+    image: '/images/sponsors/776_foundation.png',
+    detail: '$100,000+ invested in founding team',
   },
 ];

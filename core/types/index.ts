@@ -10,7 +10,8 @@ export type GridItem = {
   data: ProductInfo | TestimonialInfo;
 };
 
-export interface Sponsor {
+export interface Partner {
   name: string;
   image: string;
+  detail?: string;
 }
